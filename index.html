@@ -1,0 +1,42 @@
+<head>
+<title>my family book</title>
+
+</head>
+<body>
+    <center>
+        <h4 id = "n">
+            my family book
+        </h4>
+   <img src="278188052-H.jpg" style="width: 30%;" id = family>
+   
+   
+    </center>
+    <br>
+    <center>
+    <button onclick="up();"> next </button>
+</center>
+    <script>
+    var img = [
+    "a.png","b.jpg","c.jpg","d.jpg","e.jpg","278188052-H.jpg"
+];
+var names = [
+    "family book","ranbir singh","diljeet singh","rocky singh","alia singh","soni singh"
+];
+
+var i = 0;
+function up()
+{
+  i++;
+  var   numfamilyarray = 5
+  if(i > numfamilyarray)
+  {
+      i=0;
+
+  }
+  var upName = names[i];
+  var upimage = img[i];
+  document.getElementById("family").src = upimage;
+  document.getElementById("n").innerHTML = upName;
+}
+</script>
+</body>
